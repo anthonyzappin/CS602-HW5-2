@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HW5">
+    <meta name="keywords" content="HW5">
+
+    <meta name="author" content="">
+
+    <title>CS 602 - HW5</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 15px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 15px;
+        }
+      }
+    </style>
+
+  </head>
+  <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+  <body>
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+         <h1><p>CS 602 - HW5</p></h1>
+          <p></p>  <br>
+          <p></p>  <br>
+       
+          <p class="text-left" style="font-size:24px;">Welcome to the frontend for homework assignment 5. The below CRUD operations showcase the fifth homework assignment in CS 602.
+          </p>
+
+          <h2>"S" for Search</h2>
+<button type="button" class="btn btn-success" id='searchButton' style="
+height: 200px; width: 800px">S</button>
+<div id='searchPanel' class="hidden">
+<div class="form-group">
+        <label for="name">Name</label>
+        <center><input type="text" class="form-control" aria-describedby="searchByName" id="searchInput" placeholder="Search By Name" style="
+        height: 100px; width: 800px"></center>
+        </div>
+        <button type="button" class="btn btn-primary" id='searchSubmit'>Search</button>
+        
+        <div class="form-group">
+        <label for="street">Borough</label>
+        <center><input type="text" class="form-control" aria-describedby="searchByBorough" id="boroughInput" placeholder="Search By Borough" style="
+        height: 100px; width: 800px"></center>
+        </div>
+          <button type="button" class="btn btn-primary" id='boroughSubmit'>Search</button>
+        </div>
+      
+        <p class="text-left" style="font-size:24px;" id='readLayer' class="hidden">
+              </p>
+     
+
+              <h2>"D" for Delete</h2>
+<button type="button" class="btn btn-success" id='deleteButton' style="
+height: 200px; width: 800px">D</button>
+<div id='deletePanel' class="hidden">
+        <div class="form-group">
+                <label for="street">ID</label>
+                <center><input type="text" class="form-control" aria-describedby="name" id="deleteInput" placeholder="Delete By Id" style="
+                height: 100px; width: 800px"></center>
+                </div>
+                <button type="button" class="btn btn-danger" id='deleteSubmit' onclick="confirmDelete()" >Delete</button>
+</div>
+
+<p class="text-left" style="font-size:24px;" id='readLayer'>
+ 
+                 
+              </p>
+
+       
+      
+
+
+<h2>"A" for Add</h2>
+<button type="button" class="btn btn-success" style="
+height: 200px; width: 800px" id='addButton'>A</button>
+<div id='addPanel' class="hidden">
+        <div class="form-group">
+        <label for="street">Name</label>
+        <input type="text" class="form-control" aria-describedby="name" id="name" placeholder="name">
+        </div>
+
+    <div class="form-group">
+        <label for="building">Building</label>
+        <input type="text" class="form-control" id="building" aria-describedby="building" placeholder="Building">
+    </div>
+
+    <div class="form-group">
+        <label for="coordinate">Coordinate</label>
+        <input type="text" class="form-control" id="coordinate" aria-describedby="coordinate" placeholder="Coordinate">
+    </div>
+
+    <div class="form-group">
+      <label for="street">Street</label>
+      <input type="text" class="form-control" id="street" aria-describedby="street" placeholder="Street">
+    </div>
+
+    <div class="form-group">
+        <label for="zip">Zip</label>
+        <input type="text" class="form-control" id="zip" placeholder="zip">
+    </div>
+
+    <div class="form-group">
+        <label for="borough">Borough</label>
+        <input type="text" class="form-control" id="borough" placeholder="borough">
+    </div>
+
+    <div class="form-group">
+        <label for="cuisine">Cuisine</label>
+        <input type="text" class="form-control" id="cuisine" placeholder="cuisine">
+    </div>
+
+    <div class="form-group">
+            <label for="cuisine">Grade</label>
+            <input type="text" class="form-control" id="grade" placeholder="grade">
+    </div>
+
+<button type="button" class="btn btn-primary" id='submit'>Submit</button>
+<p class="text-left" style="font-size:24px;">
+              </p>
+              </div>
+
+       
+
+
+         
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- bootbox.js at 4.4.0 -->
+    <script src="https://rawgit.com/makeusabrew/bootbox/f3a04a57877cab071738de558581fbc91812dce9/bootbox.js"></script>
+    <script src="index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>
