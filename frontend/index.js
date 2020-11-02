@@ -166,7 +166,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         searchSubmit.addEventListener('click', event => {
             console.log("searching data")
             searchRequest()
-            readLayer.innerText = JSON.stringify(jsonResult)
+            setInterval(function() {
+                readLayer.innerText = JSON.stringify(jsonResult)
+               }, 100);
             searchInput.value = ""
             readLayer.classList.toggle('hidden');
         })
@@ -174,8 +176,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         boroughSubmit.addEventListener('click', event => {
             console.log("searching boroughs data")
             boroughRequest()
-            readLayer.innerText = JSON.stringify(jsonResult)
-            boroughInput.value = ""
+            setInterval(function() {
+                readLayer.innerText = JSON.stringify(jsonResult)
+            
+               }, 100);
+               boroughInput.value = ""
         })
     }
 });
@@ -184,5 +189,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
   
   
   
-
 
